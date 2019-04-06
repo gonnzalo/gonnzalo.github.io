@@ -1,0 +1,7 @@
+.section-container {
+  height: 100vh;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -10,10 +10,6 @@
     "node": true,
     "jest": true
   },
-  "globals": {
-    "graphql": true,
-    "__PATH_PREFIX__": true
-  },
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   }
