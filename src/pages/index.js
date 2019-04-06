@@ -2,11 +2,18 @@ import React from "react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import About from "../sections/About/About"
+import Contact from "../sections/Contact/Contact"
+import Landing from "../sections/Landing/Landing"
+import Projects from "../sections/Projects/Project"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Body</h1>
+    <Landing />
+    <About />
+    <Projects />
+    <Contact />
   </Layout>
 )
 
