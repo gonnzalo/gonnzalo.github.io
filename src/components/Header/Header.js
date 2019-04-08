@@ -3,20 +3,8 @@ import React, { useState, useEffect } from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import "./header.css"
 
-const Header = () => {
-  const [isHeaderActive, setHeaderActive] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      return window.scrollY > 10
-        ? setHeaderActive(true)
-        : setHeaderActive(false)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  })
+const Header = props => {
+  const { isHeaderActive } = props
 
   return (
     <header className={`${isHeaderActive ? "header-active" : ""}`}>
