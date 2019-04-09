@@ -43,7 +43,12 @@ header {
 }
 
 a.link-effect {
+  text-decoration: none;
   position: relative;
+  margin-bottom: 0;
+  padding-bottom: 4px;
+  color: inherit;
+  transition: 0.4s;
 }
 
 a.link-effect:after {
@@ -63,4 +68,8 @@ a.link-effect:hover:after {
   left: 0;
   right: auto;
   width: 100%;
+}
+
+.link-active {
+  border-bottom: 4px solid black;
 }
