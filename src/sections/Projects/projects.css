@@ -1,0 +1,13 @@
+#projects {
+  height: 100vh;
+}
+
+#projects .projects-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+#projects .projects-container h1 {
+  color: rgb(223, 68, 140);
+}

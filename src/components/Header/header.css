@@ -6,25 +6,42 @@ header {
   text-decoration: none;
   z-index: 1000;
   transition: 0.2s ease-in;
+  animation: slide-header 0.5s;
+}
+
+@keyframes slide-header {
+  0% {
+    opacity: 0;
+    top: -100px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
 }
 
 .header-active {
-  background-color: rgb(202, 202, 202);
-  color: #fff;
+  background-color: rgb(231, 231, 231);
 }
 
 .logo h1 a {
   text-decoration: none;
-  color: rgb(77, 77, 77);
+  color: rgb(0, 0, 0);
 }
 
 .nav-container {
-  width: 80%;
+  width: 78%;
   margin: 0 auto;
-  height: 100px;
+  height: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.4s;
+}
+
+.nav-container-active {
+  width: 80%;
+  height: 100px;
 }
 
 .nav-list {

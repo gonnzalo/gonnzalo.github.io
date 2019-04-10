@@ -1,0 +1,32 @@
+#home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #46237a;
+}
+
+#home .home-container {
+  width: 800px;
+  animation: slide-home 0.6s;
+}
+
+@keyframes slide-home {
+  0% {
+    opacity: 0;
+    margin-top: 200px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+#home .home-container h1 {
+  font-size: 4.5rem;
+  text-align: center;
+}

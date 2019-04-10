@@ -1,9 +1,12 @@
 import React from "react"
+import "./landing.css"
 
 const Landing = () => {
   return (
-    <section className="section-container">
-      <h1>Landing Page</h1>
+    <section id="home">
+      <div className="home-container">
+        <h1>Lorem, ipsum dolor sit amet consectetur</h1>
+      </div>
     </section>
   )
 }

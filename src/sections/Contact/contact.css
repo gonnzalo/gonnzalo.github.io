@@ -1,0 +1,40 @@
+#contact {
+  background-color: #46237a;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 650px) {
+  #contact {
+    flex-direction: column;
+  }
+}
+#contact h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #3ddc97;
+  margin-right: 4rem;
+}
+@media (max-width: 650px) {
+  #contact h2 {
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+  }
+}
+#contact .icons-container .icon {
+  font-size: 3rem;
+  color: #3ddc97;
+  margin-left: 1.5rem;
+  transition: 0.3s;
+}
+@media (max-width: 650px) {
+  #contact .icons .fab {
+    margin: 0 1rem;
+  }
+}
+#contact .icons-container .icon:hover {
+  transform: translateY(-2px);
+  opacity: 0.85;
+}

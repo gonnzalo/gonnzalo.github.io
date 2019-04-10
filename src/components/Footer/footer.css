@@ -4,3 +4,13 @@ footer {
   justify-content: center;
   align-items: center;
 }
+footer {
+  background-color: #312f35;
+  color: #72aa92;
+  font-size: 1.4rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #47d4d4;
+}

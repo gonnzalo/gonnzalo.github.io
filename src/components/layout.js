@@ -10,6 +10,7 @@ const Layout = ({ children }) => {
   const [currentLink, setcurrentLink] = useState(-1)
   const mainRef = useRef(null)
 
+  /* SCROLL EFFECT ON NAVEGATION BAR AND EFFECTS ON LINKS  */
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 300
@@ -24,6 +25,8 @@ const Layout = ({ children }) => {
           }
         } else if (scrollPosition >= linksArray[3].offsetTop) {
           setcurrentLink(i)
+        } else if (window.scrollY < 10) {
+          setcurrentLink(-1)
         }
       })
       return window.scrollY > 10

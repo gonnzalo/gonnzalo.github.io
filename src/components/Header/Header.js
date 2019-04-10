@@ -9,7 +9,13 @@ const Header = props => {
 
   return (
     <header className={`${isHeaderActive ? "header-active" : ""}`}>
-      <div className="nav-container">
+      <div
+        className={`${
+          isHeaderActive
+            ? "nav-container nav-container-active"
+            : "nav-container"
+        }`}
+      >
         <div className="logo">
           <h1>
             <Link to="/" className="logo">
@@ -19,6 +25,17 @@ const Header = props => {
         </div>
         <nav className="navbar">
           <ul className="nav-list">
+            <li>
+              <AnchorLink
+                offset="100"
+                href="#home"
+                className={`${
+                  currentLink === 0 ? "link-effect link-active" : "link-effect"
+                }`}
+              >
+                Home
+              </AnchorLink>
+            </li>
             <li>
               <AnchorLink
                 offset="100"

@@ -1,7 +1,10 @@
-.section-container {
-  height: 100vh;
-  border: 1px solid grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+:root {
+  -color-1: #5be39e;
+  -color-2: #5be3e2;
+  -color-3: #5ba0e3;
+  -color-4: #5b5ce3;
+  -color-5: #9e5be3;
+  -color-6: #e25be3;
+  -primary-color: #3ddc97;
+  -secundary-color: #46237a;
 }
