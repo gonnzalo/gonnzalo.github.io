@@ -1,11 +1,17 @@
 import { Link } from "gatsby"
-import React from "react"
+import React, { useState } from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import PropTypes from "prop-types"
 import "./header.css"
+import "./hamburger.css"
 
 const Header = props => {
   const { isHeaderActive, currentLink } = props
+  const [isBurgerActive, setBurger] = useState(false)
+
+  const handleCLik = () => {
+    setBurger(!isBurgerActive)
+  }
 
   return (
     <header className={`${isHeaderActive ? "header-active" : ""}`}>
@@ -23,7 +29,9 @@ const Header = props => {
             </Link>
           </h1>
         </div>
-        <nav className="navbar">
+        <nav
+          className={`${isBurgerActive ? "navbar navbar-active" : "navbar"}`}
+        >
           <ul className="nav-list">
             <li>
               <AnchorLink
@@ -71,6 +79,19 @@ const Header = props => {
             </li>
           </ul>
         </nav>
+        <button
+          className={`${
+            isBurgerActive
+              ? "is-active hamburger hamburger--elastic"
+              : "hamburger hamburger--elastic"
+          }`}
+          type="button"
+          onClick={handleCLik}
+        >
+          <span className="hamburger-box">
+            <span className="hamburger-inner" />
+          </span>
+        </button>
       </div>
     </header>
   )

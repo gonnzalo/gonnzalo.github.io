@@ -5,9 +5,22 @@
 #projects .projects-container {
   width: 80%;
   margin: 0 auto;
-  padding-top: 5rem;
 }
 
-#projects .projects-container h1 {
+#projects .projects-container .projects-title {
+  padding: 3rem 0rem;
   color: rgb(223, 68, 140);
+}
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.cards {
+  background-color: azure;
+  max-width: 600px;
+  min-height: 300px;
 }

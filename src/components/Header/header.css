@@ -90,3 +90,90 @@ a.link-effect:hover:after {
 .link-active {
   border-bottom: 4px solid black;
 }
+
+@media screen and (max-width: 750px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+    z-index: 1000;
+    transition: 0.2s ease-in;
+    animation: slide-header 0.5s;
+    background-color: rgb(231, 231, 231);
+  }
+
+  .header-active {
+    background-color: rgb(231, 231, 231);
+  }
+
+  .logo h1 a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  .nav-container {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+  }
+
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .navbar-active {
+    display: block;
+  }
+
+  .nav-list {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.938);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .nav-list li > a {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+
+  .nav-list li:not(:last-child) {
+    padding-right: 0rem;
+  }
+
+  a.link-effect:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 0;
+    bottom: -4px;
+    height: 3px;
+    background-color: #fff;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+
+  a.link-effect:hover:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+
+  .link-active {
+    border-bottom: 4px solid #fff;
+  }
+}
