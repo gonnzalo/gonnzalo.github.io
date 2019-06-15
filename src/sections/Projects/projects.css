@@ -1,5 +1,5 @@
 #projects {
-  height: 100vh;
+  height: 100%;
 }
 
 #projects .projects-container {
@@ -12,15 +12,7 @@
   color: rgb(223, 68, 140);
 }
 
-.grid-container {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-}
-
-.cards {
-  background-color: azure;
-  max-width: 600px;
-  min-height: 300px;
+.cards-container {
+  margin: 0 auto;
+  max-width: 950px;
 }

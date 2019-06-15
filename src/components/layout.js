@@ -16,16 +16,11 @@ const Layout = ({ children }) => {
       const scrollPosition = window.scrollY + 300
       const linksArray = mainRef.current.children
       Array.from(linksArray).forEach((e, i) => {
-        if (i < 3 && window.scrollY > 10) {
-          if (
-            scrollPosition > e.offsetTop &&
-            scrollPosition < linksArray[i + 1].offsetTop
-          ) {
+        if (window.scrollY > 10) {
+          if (scrollPosition > e.offsetTop) {
             setcurrentLink(i)
           }
-        } else if (scrollPosition >= linksArray[3].offsetTop) {
-          setcurrentLink(i)
-        } else if (window.scrollY < 10) {
+        } else if (window.scrollY < 10 && !(window.innerWidth < 750)) {
           setcurrentLink(-1)
         }
       })
@@ -39,6 +34,11 @@ const Layout = ({ children }) => {
       window.removeEventListener("scroll", handleScroll)
     }
   })
+  useEffect(() => {
+    if (window.innerWidth < 750) {
+      setcurrentLink(0)
+    }
+  }, [])
 
   return (
     <>

@@ -4,7 +4,7 @@ header {
   left: 0;
   width: 100%;
   text-decoration: none;
-  z-index: 1000;
+  z-index: 10000;
   transition: 0.2s ease-in;
   animation: slide-header 0.5s;
 }
@@ -21,7 +21,8 @@ header {
 }
 
 .header-active {
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0rem 0.5rem 0.3rem rgba(0, 0, 0, 0.185);
 }
 
 .logo h1 a {
@@ -53,6 +54,7 @@ header {
 .nav-list li > a {
   text-decoration: none;
   color: black;
+  font-size: 1.2rem;
 }
 
 .nav-list li:not(:last-child) {
