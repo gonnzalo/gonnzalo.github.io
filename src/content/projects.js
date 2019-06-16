@@ -13,7 +13,7 @@ export default [
       "Node",
       "PostgreSQL",
     ],
-    image: "Image",
+    image: "a.png",
     links: {
       github: "https://github.com/gonnzalo/crypto-news",
       preview: "https://crypto-news.gonnzalo.now.sh/",
@@ -31,7 +31,7 @@ export default [
       "Highcharts",
       "react-autosuggest",
     ],
-    image: "Image",
+    image: "a.png",
     links: {
       github: "https://github.com/gonnzalo/crypto-market-chart",
       preview: "https://crypto-market.gonnzalo.now.sh/",
@@ -42,7 +42,7 @@ export default [
     description:
       "This project is simple web app to generate ramdom aeropress coffee recipe",
     skills: ["HTML5", "CSS3", "JavaScript", "ES6", "ReactJS"],
-    image: "Image",
+    image: "a.png",
     links: {
       github: "s",
       preview: "s",
@@ -53,7 +53,7 @@ export default [
     description:
       "Markdown Previewer is a React single web app to write and preview markdown",
     skills: ["HTML5", "CSS3", "JavaScript", "ReactJS"],
-    image: "Image",
+    image: "a.png",
     links: {
       github: "https://github.com/gonnzalo/react-markdown-previewer",
       preview: "https://markdown-previewer.gonnzalo.now.sh/",
@@ -64,7 +64,7 @@ export default [
     description:
       "Pomodoro Clock is a React single web app to use the Pomodoro Technique",
     skills: ["HTML5", "CSS3", "JavaScript", "ReactJS"],
-    image: "Image",
+    image: "a.png",
     links: {
       github: "https://github.com/gonnzalo/react-pomodoro-clock",
       preview: "https://pomodoro-timer.gonnzalo.now.sh/",
@@ -74,7 +74,7 @@ export default [
     title: "React Calculator",
     description: "A Calculator build with React",
     skills: ["HTML5", "CSS3", "JavaScript", "ES6", "ReactJS"],
-    image: "Image",
+    image: "a.png",
     links: {
       github: "https://github.com/gonnzalo/react-calculator",
       preview: "https://calculator.gonnzalo.now.sh/",

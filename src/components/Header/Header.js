@@ -57,7 +57,7 @@ const Header = props => {
             </li>
             <li>
               <AnchorLink
-                offset="100"
+                offset="110"
                 href="#projects"
                 className={`${
                   currentLink === 2 ? "link-effect link-active" : "link-effect"

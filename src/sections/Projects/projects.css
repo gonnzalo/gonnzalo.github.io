@@ -1,18 +1,20 @@
 #projects {
   height: 100%;
+  margin-bottom: 2rem;
 }
 
 #projects .projects-container {
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 
 #projects .projects-container .projects-title {
-  padding: 3rem 0rem;
+  padding-top: 2rem;
+
   color: rgb(223, 68, 140);
 }
 
 .cards-container {
   margin: 0 auto;
-  max-width: 950px;
+  max-width: 1150px;
 }

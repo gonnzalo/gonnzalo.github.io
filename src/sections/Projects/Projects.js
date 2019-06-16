@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="projects-container">
-        <h1 className="projects-title">Project Page</h1>
+        <h1 className="projects-title">Featured Projects</h1>
         <div className="cards-container">
           {projects.map(proj => (
             <ProjectCard
