@@ -8,11 +8,25 @@
   margin: 0 auto;
 }
 
-#projects .projects-container .projects-title {
-  padding-top: 2rem;
-
+#projects .projects-title {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 1.5rem;
   color: rgb(223, 68, 140);
+  border-bottom: 4px solid rgb(223, 68, 140);
 }
+
+/* .projects-title:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 25%;
+  border-bottom: 4px solid rgb(223, 68, 140);
+} */
 
 .cards-container {
   margin: 0 auto;

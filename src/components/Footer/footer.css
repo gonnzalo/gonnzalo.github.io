@@ -14,3 +14,8 @@ footer a {
   text-decoration: none;
   color: #47d4d4;
 }
+
+.test {
+  display: inline-block;
+  width: 30px;
+}

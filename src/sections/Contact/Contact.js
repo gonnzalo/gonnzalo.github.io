@@ -1,6 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import {
   faHackerrank,
   faGithub,
@@ -14,7 +14,7 @@ const Contact = () => {
       <h2>Find my on</h2>
       <div className="icons-container">
         <a href="">
-          <FontAwesomeIcon icon={faPaperPlane} className="icon" />
+          <FontAwesomeIcon icon={faEnvelope} className="icon" />
         </a>
         <a href="">
           <FontAwesomeIcon icon={faGithub} className="icon" />
