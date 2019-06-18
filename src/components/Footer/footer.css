@@ -1,4 +1,5 @@
 footer {
+  border-top: 1px solid rgba(204, 204, 204, 0.507);
   height: 200px;
   display: flex;
   justify-content: center;
@@ -15,7 +16,7 @@ footer a {
   color: #47d4d4;
 }
 
-.test {
+.gatsby-icon {
   display: inline-block;
   width: 30px;
 }

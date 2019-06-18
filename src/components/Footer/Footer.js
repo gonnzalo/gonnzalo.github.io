@@ -1,6 +1,5 @@
 import React from "react"
 import "./footer.css"
-import { icon } from "@fortawesome/fontawesome-svg-core"
 import Image from "../image"
 
 const Footer = () => (
@@ -10,7 +9,7 @@ const Footer = () => (
       gonnzalo
     </a>
     &nbsp;using&nbsp;
-    <div className="test">
+    <div className="gatsby-icon">
       <Image imgName="gatsby-icon.png" />
     </div>
   </footer>

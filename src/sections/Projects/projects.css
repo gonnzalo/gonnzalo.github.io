@@ -32,3 +32,24 @@
   margin: 0 auto;
   max-width: 1150px;
 }
+
+@media (min-width: 480px) and (max-width: 630px) {
+  #projects .projects-container {
+    width: 90%;
+  }
+  .cards-container {
+    margin: 0 auto;
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 1151px) {
+  #projects .projects-container {
+    width: 85%;
+  }
+
+  .cards-container {
+    margin: 0 auto;
+    max-width: 650px;
+  }
+}

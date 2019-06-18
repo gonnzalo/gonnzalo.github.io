@@ -2,6 +2,7 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faPodcast } from "@fortawesome/free-solid-svg-icons"
+import PropTypes from "prop-types"
 import Image from "../image"
 
 import "./ProjectCard.css"
@@ -14,31 +15,27 @@ const ProjectSkills = ({ skills }) => {
   return (
     <div className="project-skills">
       {skills.map((skill, index) => {
+        // eslint-disable-next-line react/no-array-index-key
         return <ProjectSkill skill={skill} key={index} />
       })}
     </div>
   )
 }
 
-const ProjectLinks = ({ links: { preview, github } }) => {
+const ProjectLinks = ({ preview, github }) => {
   return (
     <div className="project-links">
-      <a href={preview} rel="noopener" target="_blank" className="project-link">
-        Live Demo <FontAwesomeIcon icon={faPodcast} />
+      <a href={preview} rel="noopener" className="project-link">
+        Live Demo <FontAwesomeIcon icon={faPodcast} className="icon-links" />
       </a>
-      <a
-        href={github}
-        rel="noopener"
-        target="_blank"
-        className="project-link secondary"
-      >
-        <FontAwesomeIcon icon={faGithub} className="icon" /> View Source
+      <a href={github} rel="noopener" className="project-link secondary">
+        <FontAwesomeIcon icon={faGithub} className="icon-links" /> View Source
       </a>
     </div>
   )
 }
 
-const ProjectCard = ({ title, description, skills, links, image, key }) => {
+const ProjectCard = ({ title, description, skills, links, image }) => {
   return (
     <div className="grid-projects">
       <div className="image-container">
@@ -48,10 +45,31 @@ const ProjectCard = ({ title, description, skills, links, image, key }) => {
         <h3>{title}</h3>
         <p>{description}</p>
         <ProjectSkills skills={skills} />
-        <ProjectLinks links={links} />
+        <ProjectLinks preview={links.preview} github={links.github} />
       </div>
     </div>
   )
+}
+
+ProjectSkill.propTypes = {
+  skill: PropTypes.string.isRequired,
+}
+
+ProjectSkills.propTypes = {
+  skills: PropTypes.string.isRequired,
+}
+
+ProjectLinks.propTypes = {
+  preview: PropTypes.string.isRequired,
+  github: PropTypes.string.isRequired,
+}
+
+ProjectCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  skills: PropTypes.string.isRequired,
+  links: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
 }
 
 export default ProjectCard

@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import PropTypes from "prop-types"
 
 const Image = ({ imgName }) => (
   <StaticQuery
@@ -9,7 +10,7 @@ const Image = ({ imgName }) => (
         allImageSharp {
           edges {
             node {
-              fluid(maxWidth: 650) {
+              fluid(maxWidth: 630) {
                 ...GatsbyImageSharpFluid
                 originalName
               }
@@ -29,4 +30,9 @@ const Image = ({ imgName }) => (
     }}
   />
 )
+
+Image.propTypes = {
+  imgName: PropTypes.string.isRequired,
+}
+
 export default Image
