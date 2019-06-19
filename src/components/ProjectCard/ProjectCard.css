@@ -28,6 +28,7 @@
   padding: 3rem 3rem;
   padding-right: 18%;
   line-height: 1.6;
+  color: var(--primary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

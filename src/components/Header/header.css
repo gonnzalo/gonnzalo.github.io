@@ -21,17 +21,23 @@ header {
 }
 
 .header-active {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0rem 0.5rem 0.3rem rgba(0, 0, 0, 0.185);
+  background-color: var(--background-color-1);
+  box-shadow: 0rem 0.3rem 0.3rem rgba(0, 0, 0, 0.185);
 }
 
-.logo h1 a {
-  text-decoration: none;
-  color: rgb(0, 0, 0);
+.logo {
+  width: 80px;
+  height: auto;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
 }
 
 .nav-container {
-  width: 78%;
+  width: 88%;
   margin: 0 auto;
   height: 110px;
   display: flex;
@@ -41,7 +47,7 @@ header {
 }
 
 .nav-container-active {
-  width: 80%;
+  width: 90%;
   height: 100px;
 }
 
@@ -53,15 +59,16 @@ header {
 
 .nav-list li > a {
   text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .nav-list li:not(:last-child) {
   padding-right: 4rem;
 }
 
-a.link-effect {
+.link-effect {
   text-decoration: none;
   position: relative;
   margin-bottom: 0;
@@ -70,27 +77,27 @@ a.link-effect {
   transition: 0.4s;
 }
 
-a.link-effect:after {
+.link-effect:after {
   content: "";
   position: absolute;
   right: 0;
   width: 0;
   bottom: -4px;
   height: 3px;
-  background-color: black;
+  background-color: var(--primary-color);
   transition-property: width;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
 }
 
-a.link-effect:hover:after {
+.link-effect:hover:after {
   left: 0;
   right: auto;
   width: 100%;
 }
 
 .link-active {
-  border-bottom: 4px solid black;
+  border-bottom: 3px solid var(--primary-color);
 }
 
 @media screen and (max-width: 750px) {
@@ -103,20 +110,14 @@ a.link-effect:hover:after {
     z-index: 1000;
     transition: 0.2s ease-in;
     animation: slide-header 0.5s;
-    background-color: rgb(231, 231, 231);
   }
 
-  .header-active {
-    background-color: rgb(231, 231, 231);
-  }
-
-  .logo h1 a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+  .logo {
+    margin-left: 15px;
   }
 
   .nav-container {
-    width: 80%;
+    width: 90%;
     height: 100px;
     margin: 0 auto;
     display: flex;
@@ -156,7 +157,7 @@ a.link-effect:hover:after {
     padding-right: 0rem;
   }
 
-  a.link-effect:after {
+  .link-effect:after {
     content: "";
     position: absolute;
     right: 0;
@@ -169,7 +170,7 @@ a.link-effect:hover:after {
     transition-timing-function: ease-out;
   }
 
-  a.link-effect:hover:after {
+  .link-effect:hover:after {
     left: 0;
     right: auto;
     width: 100%;

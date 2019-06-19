@@ -20,7 +20,7 @@ const Contact = () => {
           data-place="bottom"
         >
           <FontAwesomeIcon icon={faEnvelope} className="icon" />
-          <ReactTooltip effect="solid" />
+          <ReactTooltip className="tooltips" effect="solid" />
         </a>
         <a
           href="https://github.com/gonnzalo"
@@ -28,11 +28,11 @@ const Contact = () => {
           data-place="bottom"
         >
           <FontAwesomeIcon icon={faGithub} className="icon" />
-          <ReactTooltip effect="solid" />
+          <ReactTooltip className="tooltips" effect="solid" />
         </a>
         <a href="/" data-tip="linkedin" data-place="bottom">
           <FontAwesomeIcon icon={faLinkedin} className="icon" />
-          <ReactTooltip effect="solid" />
+          <ReactTooltip className="tooltips" effect="solid" />
         </a>
         <a
           href="https://www.hackerrank.com/gonnzalo"
@@ -40,7 +40,7 @@ const Contact = () => {
           data-place="bottom"
         >
           <FontAwesomeIcon icon={faHackerrank} className="icon" />
-          <ReactTooltip effect="solid" className="tooltip" />
+          <ReactTooltip className="tooltips" effect="solid" />
         </a>
       </div>
     </section>

@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React, { useState } from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import PropTypes from "prop-types"
+import Image from "../image"
 import "./header.css"
 import "./hamburger.css"
 
@@ -23,11 +24,9 @@ const Header = props => {
         }`}
       >
         <div className="logo">
-          <h1>
-            <Link to="/" className="logo">
-              WEB
-            </Link>
-          </h1>
+          <Link to="/">
+            <Image imgName="logo.png" className="some" />
+          </Link>
         </div>
         <nav
           className={`${isBurgerActive ? "navbar navbar-active" : "navbar"}`}
@@ -47,20 +46,9 @@ const Header = props => {
             <li>
               <AnchorLink
                 offset="100"
-                href="#about"
-                className={`${
-                  currentLink === 1 ? "link-effect link-active" : "link-effect"
-                }`}
-              >
-                About
-              </AnchorLink>
-            </li>
-            <li>
-              <AnchorLink
-                offset="110"
                 href="#projects"
                 className={`${
-                  currentLink === 2 ? "link-effect link-active" : "link-effect"
+                  currentLink === 1 ? "link-effect link-active" : "link-effect"
                 }`}
               >
                 Projects
@@ -71,7 +59,7 @@ const Header = props => {
                 offset="100"
                 href="#contact"
                 className={`${
-                  currentLink === 3 ? "link-effect link-active" : "link-effect"
+                  currentLink === 2 ? "link-effect link-active" : "link-effect"
                 }`}
               >
                 Contact
