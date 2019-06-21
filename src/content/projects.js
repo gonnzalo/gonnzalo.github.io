@@ -2,7 +2,7 @@ export default [
   {
     title: "Crypto News",
     description:
-      "Crypto News is a full stack web application with the lastest cryptocurrencies news. Users can likes and comments their favourites news",
+      "Full stack web app build with React, Node, Express, Graphql and Apollo for vizualazing the lastest cryptocurrencies news. Users can likes and comments their favourites news",
     skills: ["React", "Apollo", "Graphql", "Node", "Express", "PostgreSQL"],
     image: "crypto-news.png",
     links: {
@@ -13,8 +13,8 @@ export default [
   {
     title: "Crypto Market Chart",
     description:
-      "Crypto Market Chart is a web app to compare cryptocurrencies by market cap.",
-    skills: ["React", "Highcharts", "react-autosuggest"],
+      "Web app built with React, Highcharts and CoinGecko Api for vizualazing and compare cryptocurrencies by market cap.",
+    skills: ["React", "Axios", "Highcharts", "react-autosuggest"],
     image: "crypto-chart.png",
     links: {
       github: "https://github.com/gonnzalo/crypto-market-chart",
@@ -35,7 +35,7 @@ export default [
   {
     title: "Markdown Previewer",
     description:
-      "Markdown Previewer is a React single web app to write and preview markdown",
+      "Markdown Previewer is a web app build with React to write and preview markdown",
     skills: ["HTML5", "CSS3", "React"],
     image: "markdown.png",
     links: {
@@ -46,7 +46,7 @@ export default [
   {
     title: "Pomodoro Clock",
     description:
-      "Pomodoro Clock is a React single web app to use the Pomodoro Technique",
+      "Pomodoro Clock is a web app build with react to use the Pomodoro Technique",
     skills: ["HTML5", "CSS3", "React"],
     image: "pomodoro.png",
     links: {

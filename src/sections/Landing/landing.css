@@ -82,7 +82,7 @@
 
 #home .home-container {
   width: 800px;
-  animation: slide-home 0.6s;
+  animation: slide-home 0.4s ease-in;
 }
 
 @keyframes slide-home {
@@ -99,4 +99,10 @@
 #home .home-container h1 {
   font-size: 4.5rem;
   text-align: center;
+}
+
+@media (max-width: 750px) {
+  #home .home-container h1 {
+    font-size: 2rem;
+  }
 }

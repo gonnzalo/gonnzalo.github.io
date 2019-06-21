@@ -1,14 +1,12 @@
 footer {
   border-top: 1px solid rgba(204, 204, 204, 0.507);
   height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer {
   background-color: #312f35;
   color: #72aa92;
   font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer a {
@@ -16,7 +14,30 @@ footer a {
   color: #47d4d4;
 }
 
+footer a:hover {
+  opacity: 0.85;
+}
+
 .gatsby-icon {
   display: inline-block;
   width: 30px;
+}
+
+.footer-text {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-text span {
+  display: flex;
+}
+
+@media screen and (max-width: 358px) {
+  footer {
+    font-size: 1rem;
+  }
 }

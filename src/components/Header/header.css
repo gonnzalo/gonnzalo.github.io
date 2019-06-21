@@ -6,7 +6,7 @@ header {
   text-decoration: none;
   z-index: 10000;
   transition: 0.2s ease-in;
-  animation: slide-header 0.5s;
+  animation: slide-header 0.5s ease-in;
 }
 
 @keyframes slide-header {
@@ -73,6 +73,7 @@ header {
   position: relative;
   margin-bottom: 0;
   padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
   color: inherit;
   transition: 0.4s;
 }
@@ -82,7 +83,7 @@ header {
   position: absolute;
   right: 0;
   width: 0;
-  bottom: -4px;
+  bottom: -3px;
   height: 3px;
   background-color: var(--primary-color);
   transition-property: width;
@@ -101,17 +102,6 @@ header {
 }
 
 @media screen and (max-width: 750px) {
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-decoration: none;
-    z-index: 1000;
-    transition: 0.2s ease-in;
-    animation: slide-header 0.5s;
-  }
-
   .logo {
     margin-left: 15px;
   }
@@ -140,7 +130,7 @@ header {
   .nav-list {
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.938);
+    background-color: rgba(23, 25, 34, 0.938);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,25 +148,19 @@ header {
   }
 
   .link-effect:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    width: 0;
-    bottom: -4px;
-    height: 3px;
     background-color: #fff;
-    transition-property: width;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-  }
-
-  .link-effect:hover:after {
-    left: 0;
-    right: auto;
-    width: 100%;
   }
 
   .link-active {
     border-bottom: 4px solid #fff;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-container {
+    height: 80px;
+  }
+  .logo {
+    width: 60px;
   }
 }

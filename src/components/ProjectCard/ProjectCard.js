@@ -1,9 +1,11 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faPodcast } from "@fortawesome/free-solid-svg-icons"
 import PropTypes from "prop-types"
+import AOS from "aos"
 import Image from "../image"
+import "aos/dist/aos.css"
 
 import "./ProjectCard.css"
 
@@ -36,12 +38,17 @@ const ProjectLinks = ({ preview, github }) => {
 }
 
 const ProjectCard = ({ title, description, skills, links, image }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    })
+  }, [])
   return (
     <div className="grid-projects">
-      <div className="image-container">
+      <div className="image-container" data-aos="fade-left">
         <Image imgName={image} />
       </div>
-      <div className="project-content">
+      <div className="project-content" data-aos="fade-right">
         <h3>{title}</h3>
         <p>{description}</p>
         <ProjectSkills skills={skills} />

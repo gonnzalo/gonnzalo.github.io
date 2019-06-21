@@ -17,7 +17,7 @@
   font-size: 2.2rem;
   padding-top: 1.5rem;
   padding-bottom: 0.8rem;
-  color: var(--primary-color);
+  color: var(--color-4);
   /* border-bottom: 3px solid var(--primary-color); */
   font-weight: 500;
 }
@@ -29,7 +29,7 @@
   height: 1px;
   bottom: 0;
   left: 25%;
-  border-bottom: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--color-4);
 }
 
 .cards-container {
