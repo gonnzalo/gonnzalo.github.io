@@ -39,6 +39,7 @@ const Header = props => {
                 className={`${
                   currentLink === 0 ? "link-effect link-active" : "link-effect"
                 }`}
+                onClick={() => setBurger(false)}
               >
                 Home
               </AnchorLink>
@@ -50,6 +51,7 @@ const Header = props => {
                 className={`${
                   currentLink === 1 ? "link-effect link-active" : "link-effect"
                 }`}
+                onClick={() => setBurger(false)}
               >
                 Projects
               </AnchorLink>
@@ -61,6 +63,7 @@ const Header = props => {
                 className={`${
                   currentLink === 2 ? "link-effect link-active" : "link-effect"
                 }`}
+                onClick={() => setBurger(false)}
               >
                 Contact
               </AnchorLink>

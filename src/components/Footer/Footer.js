@@ -13,7 +13,13 @@ const Footer = () => (
         {" "}
         &nbsp;using&nbsp;
         <div className="gatsby-icon">
-          <Image imgName="gatsby-icon.png" />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.gatsbyjs.org/"
+          >
+            <Image imgName="gatsby-icon.png" />
+          </a>
         </div>
       </span>
     </div>

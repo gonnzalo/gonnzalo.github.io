@@ -122,6 +122,10 @@
     padding: 1.5rem 2rem;
   }
 
+  .project-content h3 {
+    font-size: 1.6rem;
+  }
+
   .project-links {
     margin-top: 0.8rem;
   }

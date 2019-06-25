@@ -6,7 +6,12 @@ const Landing = () => {
   return (
     <section id="home" className="landing-page">
       <div className="home-container">
-        <h1>G Lorem, ipsum dolor sit amet consectetur</h1>
+        <h1>
+          Hi! Im <span className="rest">Gonzalo!</span>
+        </h1>
+        <h2>
+          <span className="rest">Front End</span> Developer
+        </h2>
       </div>
       <AnchorLink offset="100" href="#projects">
         <span></span>

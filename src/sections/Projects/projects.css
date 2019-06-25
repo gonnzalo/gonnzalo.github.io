@@ -47,6 +47,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  #projects .projects-title {
+    font-size: 1.8rem;
+  }
+}
+
 @media (max-width: 1151px) {
   #projects .projects-container {
     width: 85%;

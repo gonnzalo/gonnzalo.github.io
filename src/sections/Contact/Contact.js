@@ -22,6 +22,8 @@ const Contact = () => {
       <h2 data-aos="fade-right">Find my on</h2>
       <div className="icons-container" data-aos="fade-left">
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="mailto:arecogonzalo@gmail.com"
           data-tip="contact me"
           data-place="bottom"
@@ -30,6 +32,8 @@ const Contact = () => {
           <ReactTooltip className="tooltips" effect="solid" />
         </a>
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://github.com/gonnzalo"
           data-tip="github"
           data-place="bottom"
@@ -37,16 +41,22 @@ const Contact = () => {
           <FontAwesomeIcon icon={faGithub} className="icon" />
           <ReactTooltip className="tooltips" effect="solid" />
         </a>
-        <a href="/" data-tip="linkedin" data-place="bottom">
-          <FontAwesomeIcon icon={faLinkedin} className="icon" />
-          <ReactTooltip className="tooltips" effect="solid" />
-        </a>
         <a
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://www.hackerrank.com/gonnzalo"
           data-tip="hacker rank"
           data-place="bottom"
         >
           <FontAwesomeIcon icon={faHackerrank} className="icon" />
+          <ReactTooltip className="tooltips" effect="solid" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/gonzaloareco/"
+          data-tip="linkedin"
+          data-place="bottom"
+        >
+          <FontAwesomeIcon icon={faLinkedin} className="icon" />
           <ReactTooltip className="tooltips" effect="solid" />
         </a>
       </div>
